@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+<h1>Welcome to Django!!</h1>
+<h2>Here are your access records</h2>
+<div>
+    <table>
+        <thead>
+
+        
+        <tr>
+            <th>Webpage</th>
+            <th>Date</th>
+        </tr>
+
+    
+    
+
+    </thead>
+    <tbody>
+
+    {% for records in acc_rec %}
+    
+       <tr> 
+     <td>{{records.name}} </td>
+     <td>{{records.date}}</td>
+
+       </tr>
+     {% endfor %}
+</tbody>
+</table>
+
+    </body>
+</html>
